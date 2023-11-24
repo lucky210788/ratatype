@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Ratatype</title>
+    <link rel="icon" type="image/x-icon" href="./favicon.ico">
+    <link rel="stylesheet" type="text/css" href="./src/css/output.css"/>
+</head>
+<body class="font-main font-medium">
+<section class="flex items-center flex-col pt-3 sm:pt-5 pb-10">
+    <img class="w-auto h-5 m-auto mb-8 sm:mb-12" src="./src/assets/logo.svg" alt="Ratatype" />
+    <form id="formLogin" class="flex items-center flex-col w-full max-w-xs sm:max-w-[550px]">
+        <img class="w-[100px] mb-4 sm:mb-5" src="./src/assets/star.svg" alt="star" />
+        <h2 class="text-primary text-[48px] sm:text-[64px] font-extrabold leading-none tracking-tighter mb-4 sm:mb-5">Увійти</h2>
+        <button type="button"
+                class="btn-main btn-google focus:outline-none focus:shadow-outline border-brand-primary hover:bg-sky-100">
+            <img class="w-6 sm:w-8 mr-1" src="./src/assets/google.svg" alt="google" />
+            Google
+        </button>
+        <p class="main-text leading-normal mb-4 sm:mb-5">або</p>
+        <div class="form-field mb-4 sm:mb-5">
+            <input type="email" id="email" name="email" class="form-field__input" placeholder="" />
+            <label for="email"class="form-field__label">Ел. пошта</label>
+            <p class="error-text">Вкажіть вашу ел. пошту</p>
+        </div>
+        <div class="form-field mb-1">
+            <input type="password" id="password" name="password" class="form-field__input" placeholder="" />
+            <label for="password" class="form-field__label">Пароль</label>
+            <p class="error-text">Вкажіть ваш пароль</p>
+        </div>
+        <div class="text-left w-full mb-4 sm:mb-5">
+            <a href="#" class="underline text-sm sm:text-base text-secondary hover:no-underline">Не пам'ятаєш пароль?</a>
+        </div>
+        <button type="submit" class="btn-main btn-login focus:outline-none focus:shadow-outline border-other-yellow-primary bg-other-yellow-light hover:bg-yellow-50">
+            Увійти
+        </button>
+        <p class="main-text">Ще не з нами? <a href="/" class="font-bold underline hover:no-underline">Зареєструватися</a></p>
+    </form>
+</section>
+<script src="./src/js/main.js"></script>
+</body>
+</html>

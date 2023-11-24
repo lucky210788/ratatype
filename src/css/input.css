@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.btn-main {
+    @apply flex items-center justify-center mb-6 rounded-[10px] border-2 w-full leading-tight text-[17px] sm:text-[20px] font-bold h-[45px] sm:h-[50px];
+}
+
+.main-text {
+    @apply text-[17px] sm:text-[20px] text-primary;
+}
+
+.form-field {
+    @apply relative w-full outline-transparent;
+}
+
+.error-text {
+    @apply hidden text-sm sm:text-base text-other-red-primary mt-1;
+}
+
+.form-field__label {
+    @apply text-secondary font-medium absolute text-[17px] sm:text-[20px] left-4 top-5 transition-transform duration-100;
+}
+
+.form-field__input {
+    @apply bg-formField-background font-medium text-[17px] sm:text-[20px] w-full outline-transparent rounded-[10px] border-2 border-formField-border leading-normal pt-7 sm:pt-8 px-4 pb-2;
+}
+
+.btn-google {
+    box-shadow: 0 4px 0 0 #00ACFF;
+}
+
+.btn-login {
+    box-shadow: 0 4px 0 0 #FC0;
+}
+
+.form-field:focus-within .form-field__label,
+.form-field .form-field__input:not(:placeholder-shown) + .form-field__label {
+    transform: translateY(-1rem) translateX(-0.5rem) scale(0.75);
+}
+
+.has-error .form-field__input {
+    border-color: #FF3B30;
+}
+
+.has-error .error-text {
+    display: inline-block;
+}
